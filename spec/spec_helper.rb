@@ -12,9 +12,10 @@ require_relative 'support/init'
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new(
   [Coveralls::SimpleCov::Formatter, SimpleCov::Formatter::HTMLFormatter]
 )
-SimpleCov.start
 
 RSpec.configure do |config|
+  SimpleCov.start
+
   config.disable_monkey_patching!
 
   config.include RSpec::Sidekiq::Spec::Support::Factories
