@@ -14,7 +14,7 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new(
 )
 
 RSpec.configure do |config|
-  SimpleCov.start
+  #SimpleCov.start
 
   config.disable_monkey_patching!
 
